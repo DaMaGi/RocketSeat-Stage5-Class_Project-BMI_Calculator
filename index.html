@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Calculadora de IMC (Índice de Massa Corporal)">
+    <meta name="keywords" content="imc, peso, massa corporal">
+    <meta name="author" content="Daniel Mäder Gisi">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./weight-scale-solid.svg">
+
+    <script src="./js/main.js" type="module"></script>
+    <script src="https://kit.fontawesome.com/ad2fe1fb53.js" crossorigin="anonymous"></script>
+
+    <title>Calculadora de IMC</title>
+</head>
+
+<body>
+    <div class="errorMsg">Digite apenas números</div>
+    <main action="/">
+        <h1>Cálculo de IMC</h1>
+        <form action="">
+            <label for="weight">Peso (kg)</label>
+            <input type="text" id="weight" placeholder="102.5">
+            <label for="height">Altura (cm)</label>
+            <input type="text" id="height" placeholder="170">
+            <button type="">Calcular IMC <img src="./arrow-up-right.svg"></button>
+        </form>
+    </main>
+    <div class="modalContainer">
+        <modal-text>
+            <img role="button" src="./close.svg" alt="Botão para fechar a caixa modal.">
+            Seu IMC é de <span>x</span>.
+        </modal-text>
+    </div>
+</body>
+
+</html>
